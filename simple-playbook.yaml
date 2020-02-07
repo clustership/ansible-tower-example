@@ -6,11 +6,11 @@
   tasks:
   - name: Add basics packages that must be installed on all decent system
     yum:
-      name: "{{ item }}"
+      name: "{{ item }}"
       state: present
     loop:
-      - netcat
+      - ncat
       - lsof
-      - iproute2
+      - iproute
       - git
       - curl
