@@ -1,0 +1,14 @@
+---
+- name: Simple starter playbook
+  hosts: all
+
+  tasks:
+  - name: Say Hello !
+    debug:
+      msg: "Say Hello to {{ item }}"
+    loop:
+      - ncat
+      - lsof
+      - iproute
+      - git
+      - curl
