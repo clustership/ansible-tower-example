@@ -1,7 +1,7 @@
 ---
 - name: Simple starter playbook
   hosts: all
-  becomes: true
+  become: true
 
   tasks:
   - name: Add basics packages that must be installed on all decent system
